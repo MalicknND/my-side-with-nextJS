@@ -26,3 +26,12 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.light{
+  background-color: #bbb;
+  color: #111;
+}
+.dark{
+  background-color: #111;
+  color: #bbb;
+}
