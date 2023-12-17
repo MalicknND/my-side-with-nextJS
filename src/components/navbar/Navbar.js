@@ -41,7 +41,7 @@ const Navbar = () => {
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
         {" "}
-        &lt;MSN/ &gt;
+        &lt; MSN /&gt;
       </Link>
       <div className={styles.links}>
         {links.map((link) => (
