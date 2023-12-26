@@ -39,26 +39,28 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div className={styles.container}>
-      <Link href="/" className={styles.logo}>
-        {" "}
-        &lt; MSN /&gt;
-      </Link>
-      <div className={styles.links}>
-        <DarkMode />
-        {links.map((link) => (
-          <Link key={link.id} href={link.url} className={styles.link}>
-            {link.title}
-          </Link>
-        ))}
-        <button
-          className={styles.logout}
-          onClick={() => console.log("Logged Out")}
-        >
-          Logout
-        </button>
+    <header className={styles.wrapper}>
+      <div className={styles.container}>
+        <Link href="/" className={styles.logo}>
+          {" "}
+          &lt; MSN /&gt;
+        </Link>
+        <div className={styles.links}>
+          <DarkMode />
+          {links.map((link) => (
+            <Link key={link.id} href={link.url} className={styles.link}>
+              {link.title}
+            </Link>
+          ))}
+          <button
+            className={styles.logout}
+            onClick={() => console.log("Logged Out")}
+          >
+            Logout
+          </button>
+        </div>
       </div>
-    </div>
+    </header>
   );
 };
 

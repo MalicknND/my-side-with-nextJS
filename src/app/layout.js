@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider>
+          {/* css global */}
           <div className="container">
             <Navbar />
             {children}
