@@ -15,19 +15,18 @@ const PostSchema = new Schema(
     },
     img: {
       type: String,
-      unique: true,
       required: true,
     },
     content: {
-        type: String,
-        unique: true,
-        required: true,
-      },
-      username: {
-        type: String,
-        unique: true,
-        required: true,
-      },
+      type: String,
+
+      required: true,
+    },
+    username: {
+      type: String,
+
+      required: true,
+    },
   },
   { timestamps: true }
 );
