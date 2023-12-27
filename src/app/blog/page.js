@@ -5,7 +5,7 @@ import Image from "next/image";
 
 // récuperer dans la doc de nextjs
 async function getData() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+  const res = await fetch("http://localhost:3000/api/posts", {
     cache: "no-store",
   });
 
@@ -22,13 +22,13 @@ const Page = async () => {
     <div className={styles.mainContainer}>
       {data.map((item) => (
         <Link
-          href={`/blog/${item.id}`}
+          href={`/blog/${item._id}`}
           className={styles.container}
           key={item.id}
         >
           <div className={styles.imgContainer}>
             <Image
-              src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=400"
+              src={item.img}
               alt=""
               width={300}
               height={300}
@@ -37,7 +37,7 @@ const Page = async () => {
           </div>
           <div className={styles.content}>
             <h1 className={styles.title}>{item.title}</h1>
-            <p className={styles.desc}>{item.body}</p>
+            <p className={styles.desc}>{item.desc}</p>
           </div>
         </Link>
       ))}
