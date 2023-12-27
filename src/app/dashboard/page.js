@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./page.module.scss";
 import useSWR from "swr";
+import { useSession, signIn, signOut } from "next-auth/react";
 
 const Page = () => {
   // const [data, setData] = useState([]);
@@ -24,13 +25,15 @@ const Page = () => {
   //   }
   //   getData();
   // }, []);
+
+  const session = useSession();
+  console.log(session);
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
   const { data, error, isLoading } = useSWR(
     "https://jsonplaceholder.typicode.com/posts",
     fetcher
   );
 
-  console.log(data, error, isLoading);
   return <div className={styles.container}>Dashboard</div>;
 };
 
