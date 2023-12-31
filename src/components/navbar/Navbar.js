@@ -6,11 +6,11 @@ import DarkMode from "../DarkMode/DarkMode";
 import { signOut, useSession } from "next-auth/react";
 
 const links = [
-  {
-    id: 1,
-    title: "Home",
-    url: "/",
-  },
+  // {
+  //   id: 1,
+  //   title: "Home",
+  //   url: "/",
+  // },
   {
     id: 2,
     title: "Portfolio",

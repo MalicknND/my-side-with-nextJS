@@ -22,18 +22,25 @@ const Page = () => {
       </div>
       <div className={styles.textContainer}>
         <div className={styles.item}>
-          <h1 className={styles.title}>Who Are We ?</h1>
+          <h1 className={styles.title}>Who Am I ?</h1>
           <p className={styles.desc}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
-            blanditiis excepturi voluptatibus, corporis nobis facere
-            necessitatibus aspernatur molestias quo illum, quidem eum molestiae
-            iusto quas nulla laudantium quos eos voluptate.
+            I am passionate about creating websites and applications that have a
+            positive impact on people\s lives. I enjoy working on projects that
+            require deep thinking and creative problem-solving. I am a big fan
+            of modern web technologies such as React, Vue.js, and Node.js, and I
+            am always looking for new trends and new ways to build amazing
+            websites.
             <br />
             <br />
-            Distinctio error ipsum aspernatur fuga impedit cumque mollitia,
-            tenetur placeat porro ullam, ducimus earum velit. Modi facilis
-            mollitia in sapiente id aliquam, fugit maxime eligendi praesentium.
-            Saepe voluptates explicabo dolorem.
+            As a self-taught web developer, I have gained extensive experience
+            working on various projects. I have a strong background in both
+            front-end and back-end development, as well as in designing
+            databases and deploying websites. I am also comfortable with
+            programming languages such as HTML, CSS, JavaScript, and PHP.
+            <br />
+            <br />I am passionate about learning and always looking for new
+            challenges to improve myself. I am convinced that passion and
+            commitment are the keys to succeeding as a web developer.
           </p>
         </div>
         <div className={styles.item}>
