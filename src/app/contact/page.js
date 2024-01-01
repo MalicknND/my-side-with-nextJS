@@ -28,7 +28,7 @@ const Page = () => {
             className={styles.textArea}
             placeholder="message"
             id=""
-            cols="30"
+            cols="20"
             rows="10"
           ></textarea>
           <Button url="#" text="Send" />
