@@ -4,7 +4,12 @@ import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
 import AuthProvider from "@/components/AuthProvider/AuthProvider";
+
 const inter = Inter({ subsets: ["latin"] });
+// const roboto = Roboto({
+//   subsets: ["latin"],
+//   weights: [100, 300, 400, 500, 700, 900],
+// });
 
 export const metadata = {
   title: "MSN",
@@ -17,7 +22,6 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <ThemeProvider>
           <AuthProvider>
-            {/* css global */}
             <div className="container">
               <Navbar />
               {children}

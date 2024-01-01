@@ -2,6 +2,11 @@ import React from "react";
 import styles from "./page.module.scss";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Portfolio",
+  description: "This is the portfolio page",
+};
+
 const Page = () => {
   return (
     <div className={styles.container}>

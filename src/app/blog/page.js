@@ -3,6 +3,11 @@ import styles from "./page.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Blog",
+  description: "This is the blog page",
+};
+
 // récuperer dans la doc de nextjs
 async function getData() {
   const res = await fetch("http://localhost:3000/api/posts", {
