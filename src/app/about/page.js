@@ -46,16 +46,17 @@ const Page = () => {
         <div className={styles.item}>
           <h1 className={styles.title}>Who We Do?</h1>
           <p className={styles.desc}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
-            blanditiis excepturi voluptatibus, corporis nobis facere.
+            Nous offrons une gamme complète de services allant du marketing
+            numérique au développement web. Ce quicomprend la mise en œuvre de
+            stratégies de marketing en ligne, la création de sites web
+            dynamiques, le développement d'applications web personnalisées,
+            ainsi que la conception et la création d'applications mobiles.
             <br />
             <br /> - Digital Marketing
             <br />
             <br /> - Dynamic Websites
             <br />
-            <br /> - Ecommerce - Web Apps
-            <br />
-            <br /> - Mobile Apps
+            <br /> - Ecommerce - Web Apps - Mobile Apps
           </p>
           <Button text="Contact Us" url="/contact" />
         </div>
