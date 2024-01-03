@@ -14,9 +14,11 @@ const Page = () => {
           className={styles.img}
         />
         <div className={styles.imgText}>
-          <h1 className={styles.imgSubtitle}>Digital Storytellers</h1>
+          <h1 className={styles.imgSubtitle}>
+            Créateurs d'Histoires Numériques
+          </h1>
           <h1 className={styles.imgDesc}>
-            Handcrafting award winning digital experiences
+            Concevoir des Expériences Numériques Inoubliables
           </h1>
         </div>
       </div>
